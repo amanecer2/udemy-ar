@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas ></canvas>
+<script src="vendor/three.min.js"></script>
+<script src="js/index.js" type="module"></script>
+<script>
+    const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('canvas')});
+
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+</script>
+</body>
+</html>

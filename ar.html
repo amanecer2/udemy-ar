@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+
+</head>
+<body>
+<a-scene embedded arjs='trackingMethod: best; '>
+    <a-anchor hit-testing-enabled='true'>
+        <a-torus position="0 0 -2" color="#43A367" arc="270" radius="0.5" radius-tubular="0.1">
+            <a-animation attribute="color" dur="3000" from="green" to="red" repeat="indefinite"></a-animation>
+            <a-animation attribute="arc" dur="3000" from="360" to="0" repeat="indefinite"></a-animation>
+        </a-torus>
+        <a-plane position="0 0 -2" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+        <a-plane position="1 1 -3" rotation="-90 0 0" height="4" width="4"
+                 src="https://raw.githubusercontent.com/aframevr/assets/gh-pages/link-traversal/thumbs/home.png"></a-plane>
+        <a-text value="hello workd" position="1 1 -3" color="black" width="5"
+        </a-text>
+    </a-anchor>
+    <a-camera-static></a-camera-static>
+</a-scene>
+</body>
+</html>
